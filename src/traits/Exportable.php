@@ -100,7 +100,7 @@ trait Exportable
         /* @var \Box\Spout\Writer\WriterInterface $writer */
         $writer->$function($path);
 
-        $hasSheets = ($writer instanceof XLSXWriter || $writer instanceof ODSWriter || $writer instanceof CSVWriter);
+        $hasSheets = ($writer instanceof XLSXWriter || $writer instanceof ODSWriter);
 
         // It can export one sheet (Collection) or N sheets (SheetCollection)
         $data = $this->data instanceof Collection ? $this->data : uniqueCollection([$this->data]);
