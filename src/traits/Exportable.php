@@ -30,6 +30,11 @@ trait Exportable
     private $headerStyle;
 
     /**
+     * @var array 备注信息 => ['备注:备注']
+     */
+    protected $remark;
+
+    /**
      * 获取文件类型
      * @param string $path
      *
@@ -80,6 +85,17 @@ trait Exportable
         return '';
     }
 
+    /**
+     * 设置备注信息
+     * @param string $remark
+     * @return $this
+     */
+    public function remark(string $remark)
+    {
+        $this->remark = $remark;
+        return $this;
+    }
+
 
     /**
      * 导出并下载Excel（csv,odb）
@@ -122,12 +138,13 @@ trait Exportable
                 $writer->addNewSheetAndMakeItCurrent();
             }
         }
+        $this->writeRemark($writer);
         $writer->close();
     }
 
     /**
      * 写入表格信息（通过集合）
-     * @param $writer
+     * @param WriterInterface $writer
      * @param Collection $collection
      * @param callable|null $callback
      */
@@ -147,6 +164,18 @@ trait Exportable
         }
         // Write all rows
         $writer->addRows($collection->toArray());
+    }
+
+    /**
+     * 写入备注信息
+     * @param $writer
+     */
+    private function writeRemark($writer)
+    {
+        if (!empty($this->remark)) {
+            // Write all rows
+            $writer->addRow($this->remark);
+        }
     }
 
     /**
@@ -175,6 +204,8 @@ trait Exportable
         }
     }
 
+
+
     /**
      * 写入信息（通过数组）
      * @param $writer
@@ -190,6 +221,8 @@ trait Exportable
             $this->writeRowsFromCollection($writer, $collection, $callback);
         }
     }
+
+
 
     /**
      * 写入header
