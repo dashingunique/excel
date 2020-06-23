@@ -13,7 +13,7 @@
       "dashingunique\\excel\\": "src/"
     },
     "files": [
-      "src/Helpers.php"
+      "src/Helper.php"
     ]
   },
   "extra": {

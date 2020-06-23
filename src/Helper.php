@@ -1,6 +1,5 @@
 <?php
 
-use dashingunique\library\Collection;
 use dashingunique\excel\DashingExcel;
 
 if (!function_exists('DashingExcel')) {
