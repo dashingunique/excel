@@ -1,0 +1,30 @@
+{
+  "name": "dashingunique/excel",
+  "type": "library",
+  "keywords": ["excel", "csv", "xls", "xlsx"],
+  "description": "Excel import/export for php",
+  "require": {
+    "php": "^7.1",
+    "box/spout": "^2.7",
+    "dashingunique/library": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "dashingunique\\excel\\": "src/"
+    },
+    "files": [
+      "src/Helpers.php"
+    ]
+  },
+  "extra": {
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "dashingunique",
+      "email": "1107842285@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
