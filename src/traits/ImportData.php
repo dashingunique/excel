@@ -1,17 +1,17 @@
 <?php
 
-namespace dashingunique\excel\traits;
+namespace dashingUnique\excel\traits;
 
 use Box\Spout\Reader\ReaderFactory;
 use Box\Spout\Reader\ReaderInterface;
 use Box\Spout\Reader\SheetInterface;
 use Box\Spout\Writer\WriterInterface;
-use dashingunique\library\Collection;
+use dashingUnique\library\Collection;
 
 /**
  * 导入Excel（csv、ods）文件
  * Trait ImportData
- * @package dashingunique\excel\traits
+ * @package dashingUnique\excel\traits
  * @property bool $withHeader
  */
 trait ImportData

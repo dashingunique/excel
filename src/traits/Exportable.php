@@ -1,14 +1,14 @@
 <?php
 
 
-namespace dashingunique\excel\traits;
+namespace dashingUnique\excel\traits;
 
 
 use Box\Spout\Reader\ReaderInterface;
 use Box\Spout\Writer\Style\Style;
 use Box\Spout\Writer\WriterFactory;
 use Box\Spout\Writer\WriterInterface;
-use dashingunique\library\Collection;
+use dashingUnique\library\Collection;
 use Generator;
 use Box\Spout\Writer\XLSX\Writer as XLSXWriter;
 use Box\Spout\Writer\ODS\Writer as ODSWriter;
@@ -18,7 +18,7 @@ use InvalidArgumentException;
 /**
  * 导出Excel（csv,ods）
  * Trait Exportable
- * @package dashingunique\excel\traits
+ * @package dashingUnique\excel\traits
  * @property bool $withHeader
  * @property Collection $data
  */

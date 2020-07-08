@@ -1,6 +1,6 @@
 <?php
 
-use dashingunique\excel\DashingExcel;
+use dashingUnique\excel\DashingExcel;
 
 if (!function_exists('DashingExcel')) {
     /**

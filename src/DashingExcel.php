@@ -1,21 +1,21 @@
 <?php
 
-namespace dashingunique\excel;
+namespace dashingUnique\excel;
 
 use Box\Spout\Common\Type;
 use Box\Spout\Reader\CSV\Reader as CSVReader;
 use Box\Spout\Reader\ReaderInterface;
 use Box\Spout\Writer\CSV\Writer as CSVWriter;
 use Box\Spout\Writer\WriterInterface;
-use dashingunique\excel\traits\Exportable;
-use dashingunique\excel\traits\ImportData;
-use dashingunique\library\Collection;
-use dashingunique\library\Str;
+use dashingUnique\excel\traits\Exportable;
+use dashingUnique\excel\traits\ImportData;
+use dashingUnique\library\Collection;
+use dashingUnique\library\Str;
 
 /**
  * Excel操作类
  * Class DashingExcel
- * @package dashingunique\excel
+ * @package dashingUnique\excel
  */
 class DashingExcel
 {

@@ -4,14 +4,14 @@ Excel import/export for Php
 Install via composer:
 
 ```
-composer require dashingunique/excel
+composer require dashingUnique/excel
 ```
 ## 导出文件信息
 
 将文件导出到 `.csv`(.xlsx .obs) 文件:
 
 ```php
-use dashingunique\excel\DashingExcel;
+use dashingUnique\excel\DashingExcel;
 use app\model\User;
 
 // Load users
