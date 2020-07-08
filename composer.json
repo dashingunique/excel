@@ -1,5 +1,5 @@
 {
-  "name": "dashingUnique/excel",
+  "name": "dashingunique/excel",
   "type": "library",
   "keywords": ["excel", "csv", "xls", "xlsx"],
   "description": "Excel import/export for php",
